@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Jestem Czarny | Contact</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Jestem Czarny</div>
+        <a href="#" class="ham_menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <div class="menu">
+            <ul>
+                <li class="menu_link"><a href="index.html">Home</a></li>
+                <li class="menu_link"><a href="#about">About</a></li>
+                <li class="menu_link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="formdiv">
+        <form action="create.php" method="POST" name="feedbackform" onsubmit="return val()">
+            <h2>FEEDBACK</h2>
+            <div class="fieldctn">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="name" placeholder="Name">
+                <span class="errorMsg" id="nameError"></span>
+            </div>
+            <div class="fieldctn">
+                <label for="Phoneno">Phone no.</label>
+                <input type="tel" id="phno" name="phno" placeholder="Phone no.">
+                <span class="errorMsg" id="phnoError"></span>
+            </div>
+            <div class="fieldctn">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="email" placeholder="Email">
+                <span class="errorMsg" id="emailError"></span>
+            </div>
+            <div class="fieldctn">
+                <label for="Feedback">Feedback</label>
+                <textarea name="feedback" id="feedback" placeholder="Feedback"></textarea>
+                <span class="errorMsg" id="feedbackError"></span>
+            </div>
+            <div class="fbtnctn">
+                <input type="submit" value="Submit"><input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="socialsctn">
+            <div class="logo">Jestem Czarny</div>
+            <div class="socials">
+                <h2>Follow us on</h2>
+                <ul>
+                    <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="images/x.png" alt="X"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="crmatrial">
+            <div class="copyright">© 2012 - 2024 Jestem Czarny Pvt. Ltd.</div>
+            <div class="tnc_pp">
+                <a href="">Terms of use </a>  | <a href=""> Privacy policy</a>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
